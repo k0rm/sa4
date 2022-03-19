@@ -1,0 +1,53 @@
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    gap: 3em;
+}
+
+.carouselImage {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+}
+
+button:hover {
+    color: blue;
+}
+
+
+.small {
+    composes: carousel;
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    font-size: 24px;
+}
+
+
+.medium {
+    composes: carousel;
+    max-width: 400px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    font-size: 36px;
+}
+
+
+.large {
+    composes: carousel;
+    max-width: 600px;
+    max-height: 600px;
+    width: auto;
+    height: auto;
+    font-size: 64px;
+}
